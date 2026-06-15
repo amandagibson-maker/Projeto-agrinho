@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#f0fff4,#eef7ff);
+color:#2c3e50;
+line-height:1.8;
+}
+
+/* BANNER */
+
+header{
+background:
+linear-gradient(rgba(0,80,40,.6),rgba(0,90,150,.6)),
+url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=2000');
+background-size:cover;
+background-position:center;
+height:85vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+padding:30px;
+}
+
+header h1{
+font-size:5rem;
+font-weight:800;
+color:white;
+text-shadow:0 5px 25px rgba(0,0,0,.4);
+margin-bottom:20px;
+}
+
+header p{
+font-size:1.4rem;
+color:white;
+max-width:850px;
+}
+
+/* MENU */
+
+nav{
+background:linear-gradient(90deg,#00a651,#1976d2);
+padding:18px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 18px;
+font-size:17px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d7ffe0;
+}
+
+/* SEÇÕES */
+
+section{
+max-width:1300px;
+margin:auto;
+padding:60px 20px;
+}
+
+/* CARDS */
+
+.card{
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+
+padding:35px;
+margin-bottom:35px;
+
+border-radius:25px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h2{
+font-size:2.2rem;
+margin-bottom:20px;
+color:#0a944f;
+}
+
+.card p{
+font-size:1.05rem;
+}
+
+/* IMAGENS */
+
+img{
+width:100%;
+border-radius:20px;
+margin:25px 0;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ESTATÍSTICAS */
+
+.estatisticas{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+}
+
+.estatistica{
+background:
+linear-gradient(135deg,#00c853,#2196f3);
+
+color:white;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+}
+
+.estatistica:hover{
+transform:scale(1.05);
+}
+
+.estatistica h3{
+font-size:2.5rem;
+margin-bottom:10px;
+color:white;
+}
+
+/* LISTAS */
+
+ul{
+padding-left:25px;
+}
+
+li{
+margin-bottom:12px;
+font-size:1.05rem;
+}
+
+/* BOTÃO */
+
+button{
+background:
+linear-gradient(90deg,#00c853,#2196f3);
+
+border:none;
+
+padding:16px 35px;
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+#mensagem{
+margin-top:20px;
+font-size:20px;
+font-weight:600;
+color:#0a944f;
+}
+
+/* RODAPÉ */
+
+footer{
+background:
+linear-gradient(90deg,#0f9d58,#1976d2);
+
+color:white;
+
+text-align:center;
+
+padding:60px 20px;
+}
+
+footer h2{
+font-size:2rem;
+margin-bottom:15px;
+}
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+header h1{
+font-size:3rem;
+}
+
+header p{
+font-size:1.1rem;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.card{
+padding:25px;
+}
+
+.card h2{
+font-size:1.8rem;
+}
+
+}
